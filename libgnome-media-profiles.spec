@@ -37,6 +37,8 @@ Summary:	Header files for GNOME Media Profiles library
 Summary(pl.UTF-8):	Pliki nagłówkowe biblioteki GNOME Media Profiles
 Group:		X11/Development/Libraries
 Requires:	%{name} = %{version}-%{release}
+Requires:	GConf2-devel
+Requires:	gtk+3-devel >= 3.0.0
 Obsoletes:	gnome-media-devel
 
 %description devel
