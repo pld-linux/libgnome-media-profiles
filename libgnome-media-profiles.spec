@@ -25,6 +25,7 @@ BuildRequires:	libtool
 BuildRequires:	pkgconfig
 BuildRequires:	rpmbuild(find_lang) >= 1.23
 Requires(post,preun):	GConf2
+Obsoletes:	gnome-media-libs
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -36,6 +37,7 @@ Summary:	Header files for GNOME Media Profiles library
 Summary(pl.UTF-8):	Pliki nagłówkowe biblioteki GNOME Media Profiles
 Group:		X11/Development/Libraries
 Requires:	%{name} = %{version}-%{release}
+Obsoletes:	gnome-media-devel
 
 %description devel
 Header files for GNOME Media Profiles library.
@@ -48,6 +50,7 @@ Summary:	Static GNOME Media Profiles library
 Summary(pl.UTF-8):	Statyczna biblioteka GNOME Media Profiles
 Group:		X11/Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
+Obsoletes:	gnome-media-static
 
 %description static
 Static GNOME Media Profiles library.
