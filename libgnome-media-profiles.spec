@@ -1,7 +1,15 @@
+# TODO
+# - missing gnome2->gnome3 upgrade path:
+#   metapackage-gnome-desktop-3.0.1-1.noarch marks sound-juicer-2.32.0-4.i686 (cap sound-juicer >= 2.28.2)
+#    sound-juicer-2.32.0-4.i686 marks libgnome-media-profiles-3.0.0-1.i686 (cap libgnome-media-profiles-3.0.so.0)
+#     gnome-media-libs-2.32.0-2.i686 obsoleted by libgnome-media-profiles-3.0.0-1.i686
+#   error: gnome-media-libs = 2.32.0-2 is required by installed gnome-media-2.32.0-2.i686
+#   error: libgnome-media-profiles.so.0 is required by installed gnome-media-2.32.0-2.i686
+#   error: libgnome-media-profiles.so.0 is required by installed gnome-media-sound-recorder-2.32.0-2.i686
 #
 # Conditional build:
 %bcond_without	static_libs	# don't build static libraries
-#
+
 Summary:	GNOME Media Profiles library
 Name:		libgnome-media-profiles
 Version:	3.0.0
